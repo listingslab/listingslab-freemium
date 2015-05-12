@@ -1,0 +1,1 @@
+<a href="<?php print get_permalink();?>" class="list-link" rel="bookmark"><?php print get_the_title();?></a>, 
