@@ -31,27 +31,6 @@ function setup_jqueryui() {
 		wp_register_script('shortcode-blog', get_template_directory_uri() . '/js/FREEmium_Shortcodes/blog.js', false, '1');
 		wp_enqueue_script('shortcode-blog');
 		
-		// OSFrontend //
-		wp_register_script('osf_jqcookie', get_template_directory_uri() . '/osfrontend/osf_jqcookie.js', false, '1');
-		wp_enqueue_script('osf_jqcookie');
-		wp_register_script('osf_cookie', get_template_directory_uri() . '/osfrontend/osf_cookie.js', false, '1');
-		wp_enqueue_script('osf_cookie');
-		wp_register_script('osf_date', get_template_directory_uri() . '/osfrontend/osf_date.js', false, '1');
-		wp_enqueue_script('osf_date');
-		wp_register_script('osf_dialog', get_template_directory_uri() . '/osfrontend/osf_dialog.js', false, '1');
-		wp_enqueue_script('osf_dialog');
-		wp_register_script('osf_dispatch', get_template_directory_uri() . '/osfrontend/osf_dispatch.js', false, '1');
-		wp_enqueue_script('osf_dispatch');
-		wp_register_script('osf_interval', get_template_directory_uri() . '/osfrontend/osf_interval.js', false, '1');
-		wp_enqueue_script('osf_interval');
-		
-		wp_register_script('osf_message', get_template_directory_uri() . '/osfrontend/osf_message.js', false, '1');
-		wp_enqueue_script('osf_message');
-		wp_register_script('osf_request', get_template_directory_uri() . '/osfrontend/osf_request.js', false, '1');
-		wp_enqueue_script('osf_request');
-		wp_register_script('osfrontend', get_template_directory_uri() . '/osfrontend/osfrontend.js', false, '1');
-		wp_enqueue_script('osfrontend');
-		
 	}
 }
 add_action('init', 'setup_jqueryui');
