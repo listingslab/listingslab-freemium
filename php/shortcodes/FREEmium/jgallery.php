@@ -10,7 +10,7 @@
 			$output .= '<link rel="stylesheet" type="text/css" media="all" href="'.get_template_directory_uri().'/js/jgallery/css/jgallery.min.css" />';
 			$output .= '<script type="text/javascript" src="'.get_template_directory_uri().'/js/jgallery/js/tinycolor-0.9.16.min.js"></script>';
 			$output .= '<script type="text/javascript" src="'.get_template_directory_uri().'/js/jgallery/js/jgallery.min.js"></script>';
-			$output .= '<script type="text/javascript" src="'.get_template_directory_uri().'/js/jgallery.js"></script>';
+			$output .= '<script type="text/javascript" src="'.get_template_directory_uri().'/js/FREEmium_Shortcodes/jgallery.js"></script>';
 			$output .= '<div class="FREEmium_jgallery_wrapper">';
 			$output .= '<div class="FREEmium_jgallery">';
 			$output .= '<div class="album" data-jgallery-album-title="FREEmium">';

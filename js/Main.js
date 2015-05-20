@@ -2,6 +2,7 @@
 //	Open Source Listingslab ECMAScript
 $(document).ready(function () {
 	try {
+		console.log ('Welcome to listingslab FREEmium');
 		_model ();
 		_view ();
 		_controller ();
