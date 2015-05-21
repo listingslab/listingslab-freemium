@@ -1,3 +1,4 @@
+
 function _admin_banner (){
 // banner
 	try {
@@ -123,9 +124,9 @@ function _admin_style (){
 function _admin_icon (){
 // Handles the MicroSite Icon functionality
 	try {
-		_css ($('#admin_icon_img'), 'float', 'left' );
+		_css ($('#admin_icon_img'), 'float', 'right' );
 		_css ($('#admin_icon_img'), 'max-height', '150px' );
-		_css ($('#admin_icon_img'), 'margin-right', '25px' );
+		_css ($('#admin_icon_img'), 'margin-left', '25px' );
 		
 		$('#icon_edit').click(function() {
 			try {
@@ -166,6 +167,8 @@ function _template_func (){
 
 $(document).ready(function () {
 	try {
+		console.log ('________________________\n\nWelcome to FREEmium admin.js');
+
 		_admin_data ();
 		_admin_icon ();
 		_admin_style ();

@@ -1,16 +1,17 @@
 <div id="admin_icon" class="admin_section"><div class="pad_ten">
-	<h1>Choose MicroSite Icon</h1>
+	<h1>MicroSite Icon</h1>
 	<?php
 		$i = get_theme_mod ('icon', get_template_directory_uri().'/img/png/system/add_logo.png');
 	?>
-	<a id="choose-from-library-link" href="#"
+	<div id="icon_instructions">
+	<p><a id="choose-from-library-link" href="#"
 	    data-update-link="<?php print get_admin_url();?>admin.php?page=FREEmium&action=update_icon" 
 	    data-choose="<?php esc_attr_e( 'Choose MicroSite Icon' ); ?>"
 	    data-update="<?php esc_attr_e( 'Set MicroSite Icon' ); ?>">
 	    <img id="admin_icon_img" src="<?php print $i;?>">
 	</a>
-	<div id="icon_instructions">
-		<p>Your MicroSite icon is vital. It's not just the
+	
+		Your MicroSite icon is vital. It's not just the
 		logo at the top left of the website, but also the default
 		image used for all kinds of things, from the favicon to
 		the image used when pages are shared to Google or Facebook.</p>

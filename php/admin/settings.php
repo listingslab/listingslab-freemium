@@ -27,5 +27,5 @@ global $current_user;
 <h1 class="admin_title">FREEmium Settings</h1>
 <?php include 'message.php'; ?>
 <?php //include 'banner.php'; ?>
-<?php //include 'colours.php'; ?>
+<?php include 'ui_colours.php'; ?>
 <?php include 'icon.php'; ?>
