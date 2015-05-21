@@ -23,6 +23,9 @@ $config['icon'] = get_theme_mod ('icon', $default_icon);
 	<link rel="shortcut icon" href="<?php print $config['icon']; ?>" type="image/x-icon" />
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
+	
+	<?php include 'php/css.php'; ?> ?>
+
 </head>
 <body <?php body_class(); ?>>
 <?php include 'php/google_analytics.php'; ?>

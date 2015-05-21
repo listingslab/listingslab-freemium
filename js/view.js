@@ -96,8 +96,6 @@ function _site_style (){
 		alert ('FREEmium view.js \n\n _site_style Error\n\n'+err);
 	}
 }
-
-
 function _preloader (){
 // Styles the preloader
 	try {
@@ -131,33 +129,25 @@ function _adjust_winmode (){
 		_css ($('#FREEmium #icon'), 'max-height', '50px' );
 		if (FREEmium ['win_mode'] == 'smallest'){
 			_css ($('#FREEmium .entry-header'), 'padding-top', '35px');
-			_css ($('#FREEmium .entry-header'), 'padding-left', '25px');
-			
-			_css ($('.main-navigation a'), 'color',  FREEmium ['colours']['links']);
+			_css ($('#FREEmium .entry-header'), 'padding-left', '25px');	
 		} else if (FREEmium ['win_mode'] == 'small'){
 			_css ($('#FREEmium #icon'), 'max-height', '50px' );
-			_css ($('.main-navigation a'), 'color',  FREEmium ['colours']['links']);
 		} else if (FREEmium ['win_mode'] == 'smallish'){
 			_css ($('#FREEmium #icon'), 'max-height', '50px' );
-			_css ($('.main-navigation a'), 'color',  FREEmium ['colours']['links']);
 		} else if (FREEmium ['win_mode'] == 'smaller'){
 			_css ($('#FREEmium #icon'), 'max-height', '50px' );
-			_css ($('.main-navigation a'), 'color',  FREEmium ['colours']['links']);
 		} else if (FREEmium ['win_mode'] == 'medium'){
 			_css ($('#FREEmium #icon'), 'max-height', '150px' );
 			_css ($('#FREEmium_nav'), 'margin-left', '55px' );
-			_css ($('.main-navigation a'), 'color',  FREEmium ['colours']['sidebar']);
 		} else if (FREEmium ['win_mode'] == 'big'){
 			_css ($('#FREEmium #icon'), 'max-height', '150px' );
 			_css ($('#FREEmium_nav'), 'margin-left', '65px' );
-			_css ($('.main-navigation a'), 'color',  FREEmium ['colours']['sidebar']);
 		} else if (FREEmium ['win_mode'] == 'biggest'){
 			_css ($('#FREEmium #icon'), 'max-height', '150px' );
 			_css ($('#FREEmium_nav'), 'margin-left', '80px' );
-			_css ($('.main-navigation a'), 'color',  FREEmium ['colours']['sidebar']);
 		}
 	}catch (err){
-		alert ('FREEmium view.js \n\n _site_style Error\n\n'+err);
+		console.log ('FREEmium view.js \n\n _site_style Error\n\n'+err);
 	}
 }		
 
@@ -168,35 +158,22 @@ function _fonts (){
 		_css ($('body'), 'font-family', 'Lato' );
 		_css ($('body'), 'color', FREEmium ['colours']['text'] );
 		_css ($('pre'), 'font-family', 'Courier New' );
-		
-		
-		
 		_css ($('a'), 'border-bottom', 'none' );
-		_css ($('a'), 'font-weight', 'bold' );
-		
-		_css ($('h4'), 'font-weight', 'normal' );
-		_css ($('h3'), 'font-weight', 'normal' );
-		_css ($('h2'), 'font-weight', 'normal' );
-		_css ($('h1'), 'font-weight', 'normal' );
-		
-		
 		_css ($('h4'), 'margin', '0px' );
 		_css ($('h3'), 'margin', '0px' );
 		_css ($('h2'), 'margin', '0px' );
 		_css ($('h1'), 'margin', '0px' );
-		
-		_css ($('h4 a'), 'font-weight', 'normal' );
-		_css ($('h3 a'), 'font-weight', 'normal' );
-		_css ($('h2 a'), 'font-weight', 'normal' );
-		_css ($('h1 a'), 'font-weight', 'normal' );
-		
-		//_css ($('h4'), 'color',  FREEmium ['colours']['dark']);
-		//_css ($('h3'), 'color',  FREEmium ['colours']['dark']);
+		_css ($('h4'), 'color',  FREEmium ['colours']['htags']);
+		_css ($('h3'), 'color',  FREEmium ['colours']['htags']);
 		_css ($('h2'), 'color',  FREEmium ['colours']['htags']);
 		_css ($('h1'), 'color',  FREEmium ['colours']['htags']);
-		
-		
-		
+	}catch (err){
+		alert ('FREEmium view.js \n\n _fonts Error\n\n'+err);
+	}
+}
+function _colour_links (){
+// colours links
+	try {
 		_css ($('blockquote a'), 'color',  FREEmium ['colours']['links']);
 		_css ($('p a'), 'color',  FREEmium ['colours']['links']);
 		_css ($('.posted-on a'), 'color',  FREEmium ['colours']['links']);
@@ -215,6 +192,6 @@ function _fonts (){
 		_css ($('.main-navigation a'), 'color',  FREEmium ['colours']['sidebar']);
 		_css ($('.btn_category'), 'color',  FREEmium ['colours']['links']);
 	}catch (err){
-		alert ('FREEmium view.js \n\n _fonts Error\n\n'+err);
+		console.log (err);
 	}
 }

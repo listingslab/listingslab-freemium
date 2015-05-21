@@ -14,7 +14,7 @@
 <?php wp_footer(); ?>
 </div>
 <div id="preloader">
-	<img src="<?php print get_template_directory_uri(); ?>/img/gif/circle.gif" />
+	<img src="<?php print get_template_directory_uri(); ?>/img/gif/ajax-loader.gif" />
 </div>
 </body>
 </html>
