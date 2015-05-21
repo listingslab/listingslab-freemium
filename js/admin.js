@@ -1,3 +1,4 @@
+console.log ('________________________\n\nWelcome to FREEmium admin.js');
 
 function _admin_banner (){
 // banner
@@ -167,8 +168,7 @@ function _template_func (){
 
 $(document).ready(function () {
 	try {
-		console.log ('________________________\n\nWelcome to FREEmium admin.js');
-
+		
 		_admin_data ();
 		_admin_icon ();
 		_admin_style ();

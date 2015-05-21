@@ -10,15 +10,14 @@
 	    data-update="<?php esc_attr_e( 'Set MicroSite Icon' ); ?>">
 	    <img id="admin_icon_img" src="<?php print $i;?>">
 	</a>
-	
-		Your MicroSite icon is vital. It's not just the
-		logo at the top left of the website, but also the default
-		image used for all kinds of things, from the favicon to
-		the image used when pages are shared to Google or Facebook.</p>
-		<p>Square images work best, ideally around 250px in size. 
-		If possible you should use a nice, clean version of 
-		a logo which is still recognisable when shrunk to tiny size.</p>
-		<p>Click on the icon to choose a different one.</p>
+Your MicroSite icon is vital. It's not just the
+logo at the top left of the website, but also the default
+image used for all kinds of things, from the favicon to
+the image used when pages are shared to Google or Facebook.</p>
+<p>Square images work best, ideally around 250px in size. 
+If possible you should use a nice, clean version of 
+a logo which is still recognisable when shrunk to tiny size.</p>
+<p>Click on the icon to choose a different one.</p>
 	</div>
 	<input id="icon_url" type="hidden" name="icon_url" value="<?php print $i;?>" />
 	<div style="clear:both; height:10px;"></div>

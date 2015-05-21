@@ -5,13 +5,13 @@
 add_action('customize_register', 'freemium_customize');
 function freemium_customize ($wp_customize) {
     
-	$wp_customize->add_setting( 'dark_colour', array(
+	$wp_customize->add_setting( 'htags_colour', array(
         'default'        => '#4d4d4d',
     ) );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'freemium_dark_colour', array(
-        'label'   => 'Dark Colour',
+    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'freemium_htags_colour', array(
+        'label'   => 'Headings Colour',
         'section' => 'colors',
-        'settings'   => 'dark_colour',
+        'settings'   => 'htags_colour',
     ) ) );
     $wp_customize->add_setting( 'link_colour', array(
         'default'        => '#4d4d4d',

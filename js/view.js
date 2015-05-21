@@ -192,8 +192,8 @@ function _fonts (){
 		
 		//_css ($('h4'), 'color',  FREEmium ['colours']['dark']);
 		//_css ($('h3'), 'color',  FREEmium ['colours']['dark']);
-		_css ($('h2'), 'color',  FREEmium ['colours']['dark']);
-		_css ($('h1'), 'color',  FREEmium ['colours']['dark']);
+		_css ($('h2'), 'color',  FREEmium ['colours']['htags']);
+		_css ($('h1'), 'color',  FREEmium ['colours']['htags']);
 		
 		
 		

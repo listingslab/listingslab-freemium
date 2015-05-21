@@ -1,6 +1,6 @@
 <?php
-/********* FREEmium ADMIN v.1.3 ************/
-define( 'FREEmium_ADMIN_VERSION', '1.3' );
+/********* FREEmium ADMIN v.1.4 ************/
+define( 'FREEmium_ADMIN_VERSION', '1.4' );
 
 function FREEmium_menu() {
 	add_menu_page(__('FREEmium','FREEmium_menu'), __('FREEmium','FREEmium-menu'), 'manage_options', 'FREEmium', 'FREEmium_settings', get_template_directory_uri().'/img/png/system/tick_orange.png', 49);
