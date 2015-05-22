@@ -84,6 +84,7 @@ class Shortcode_Pages {
 		remove_filter( 'wp_list_pages', array( 'Shortcode_Pages', 'ul2list_type' ), 10 );
 		if ( ! empty( $out ) && ! empty( $atts['list_type'] ) ) {
 			$out = '<' . $atts['list_type'] . ' class="' . $atts['class'] . '">' . $out . '</' . $atts['list_type'] . '>';
+			
 		}
 		$out = apply_filters( 'shortcode_list_pages', $out, $atts, $content, $tag );
 

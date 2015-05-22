@@ -24,7 +24,7 @@ $config['icon'] = get_theme_mod ('icon', $default_icon);
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 	
-	<?php include 'php/css.php'; ?> ?>
+	<?php include 'php/css.php'; ?>
 
 </head>
 <body <?php body_class(); ?>>

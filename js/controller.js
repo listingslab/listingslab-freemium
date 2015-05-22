@@ -91,6 +91,8 @@ function _toggle_related_pages (){
 function _related_pages (){
 // Handles related pages button functionality
 	try {
+		
+		_css ($('.list-pages-shortcode li'), 'list-style', 'none' );
 		_css ($('#up'), 'float', 'left' );
 		$('#related_pages').hide ();
 		$('#related_button').click (function (){
@@ -101,6 +103,8 @@ function _related_pages (){
 			}
 			return false;
 		});
+		
+		
 		_btn ('.list-pages-shortcode a', 'seek-next', true);
 		$('.list-pages-shortcode a').click (function (){
 			try {

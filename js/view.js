@@ -157,6 +157,12 @@ function _fonts (){
 		_css ($('h3'), 'margin', '0px' );
 		_css ($('h2'), 'margin', '0px' );
 		_css ($('h1'), 'margin', '0px' );
+		
+		_css ($('h4'), 'font-weight', 'normal' );
+		_css ($('h3'), 'font-weight', 'normal' );
+		_css ($('h2'), 'font-weight', 'normal' );
+		_css ($('h1'), 'font-weight', 'normal' );
+		
 		_css ($('h4'), 'color',  FREEmium ['colours']['htags']);
 		//_css ($('h3'), 'color',  FREEmium ['colours']['htags']);
 		_css ($('h2'), 'color',  FREEmium ['colours']['htags']);

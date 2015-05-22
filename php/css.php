@@ -21,16 +21,11 @@
 	 * Find out how here http://wp.me/P5Q8N9-1eS */
 	::selection {background: <?php print $ui ['default'];?>;color: #fff;text-shadow: none;}
 	::-moz-selection {background: <?php print $ui ['default'];?>;color: #fff;text-shadow: none;}
-	/* Highlight & Error */
 	.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {background: <?php print $ui ['highlight'];?>;}
 	.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error {background: <?php print $ui ['error'];?>;}
-
-	/* Deafult, Hover & active Colours */
 	.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {background: <?php print $ui ['default'];?>;}
 	.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus {background: <?php print $ui ['hover'];?>;}
 	.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active {background: <?php print $ui ['active'];?>;}
-	
-	/* Border Color */
 	.ui-widget-content {border: 1px solid <?php print $ui ['border'];?>;}
 	.ui-widget-header {border: 1px solid <?php print $ui ['border'];?>;}
 	.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {border: 1px solid <?php print $ui ['border'];?>;}
@@ -38,23 +33,17 @@
 	.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active {border: 1px solid <?php print $ui ['border'];?>;}
 	.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {border: 1px solid <?php print $ui ['border'];?>;}
 	.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error {border: 1px solid <?php print $ui ['border'];?>;}
-	/* Button Text Color */
 	.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { color: <?php print $ui ['btn_text'];?>;}
 	.ui-state-hover a,.ui-state-hover a:hover,.ui-state-hover a:link,.ui-state-hover a:visited,.ui-state-focus a,.ui-state-focus a:hover,.ui-state-focus a:link,.ui-state-focus a:visited {color: <?php print $ui ['btn_text'];?>;}
 	.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active {color: <?php print $ui ['btn_text'];?>;}
 	.ui-state-active a,.ui-state-active a:link,.ui-state-active a:visited {color: <?php print $ui ['btn_text'];?>;}
 	.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {color: <?php print $ui ['btn_text'];?>;}
 	.ui-state-default a,.ui-state-default a:link,.ui-state-default a:visited {color: <?php print $ui ['btn_text'];?>;}
-	
-	/* Content */
 	.ui-widget-content { background: <?php print $ui ['content_bg'];?>; color: <?php print $ui ['content_text'];?>;}
 	.ui-widget-content a { color: <?php print $ui ['content_text'];?>;}
-	
-	/* Toolbar */
 	.ui-widget-header {background: <?php print $ui ['toolbar_bg'];?>;}
 	.ui-widget-header {color: <?php print $ui ['toolbar_text'];?>}
 	.ui-widget-header a {color: <?php print $ui ['toolbar_text'];?>;}
-	/* Icons */
 	.ui-icon,.ui-widget-content .ui-icon { background-image: url("<?php print $ui ['icon'];?>");}
 	.ui-widget-header .ui-icon { background-image: url("<?php print $ui ['icon'];?>");}
 	.ui-state-default .ui-icon { background-image: url("<?php print $ui ['icon'];?>");}
@@ -62,7 +51,5 @@
 	.ui-state-active .ui-icon { background-image: url("<?php print $ui ['icon'];?>");}
 	.ui-state-highlight .ui-icon { background-image: url("<?php print $ui ['icon'];?>");}
 	.ui-state-error .ui-icon, .ui-state-error-text .ui-icon { background-image: url("<?php print $ui ['icon'];?>");}
-	/* Turn off annoying outlines */
 	.ui-widget * { outline: none; }​
-
 </style> 
