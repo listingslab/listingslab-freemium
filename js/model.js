@@ -95,21 +95,13 @@ function _hotkeys (){
 		alert ('FREEmium model.js \n\n _hotkeys\n\n'+err);
 	}
 }
-function _addborder (selector){
-// Adds a round cornered border to an element
-	try {
-		_css (selector, 'border', '1px solid ' + FREEmium ['colours']['border']);
-		selector.addClass('ui-state- ui-corner-all');
-	}catch (err){
-		alert ('FREEmium model.js \n\n_addborder Error\n\n'+err);
-	}
-}
+
 function _css (selector, css, value){
 // Uses jQuery to set CSS
 	try {
 		$(selector).css (css,value);
 	}catch (err){
-		alert ('FREEmium model.js \n\n _css\n\n'+err);
+		console.log ('FREEmium model.js \n\n _css\n\n'+err);
 	}
 }
 function _btn (selector, icon, showtext){
@@ -127,8 +119,6 @@ function _btn (selector, icon, showtext){
 		_css (new_button, 'text-align', 'left');	
 		_css (new_button, 'margin', '3px');
 		_css (new_button, 'width', '100%');
-		_css (new_button, 'border', '1px solid' + FREEmium ['colours']['border']);
-		_css (new_button, 'color', FREEmium ['colours']['text']);
 	}catch (err){	
 		alert ('_btn\n\n'+err);
 	}

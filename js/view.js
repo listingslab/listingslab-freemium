@@ -24,8 +24,6 @@ function _site_style (){
 		_css ($('.shortcode_blog_img'), 'max-width', '100px' );
 		_css ($('.shortcode_blog_img'), 'max-height', '100px' );
 		
-		
-		
 		$('#_categories').hide();
 		
 		_css ($('#FREEmium .accordion'), 'margin', '25px' );
@@ -43,8 +41,6 @@ function _site_style (){
 		_css ($('#laptop_menu_right'), 'width', '48%' );
 		_css ($('#laptop_menu_right'), 'float', 'right' );
 		
-		//_css ($('#FREEmium .entry-title'), 'color',  FREEmium ['colours']['header']);
-		//_css ($('#FREEmium .entry-title a'), 'color', FREEmium ['colours']['header']);
 		_css ($('#FREEmium .entry-header'), 'padding', '0px');
 		
 		_css ($('#FREEmium .post-thumbnail'), 'float', 'left' );
@@ -68,7 +64,7 @@ function _site_style (){
 		$('#FREEmium .comments-link').hide();
 		
 		_css ($('#FREEmium li'), 'list-style', 'none' );
-		_css ($('.starred li'), 'list-style-image', 'url("'+FREEmium ['app_root']+'/img/png/bullet.png")' );
+		_css ($('#main li'), 'list-style-image', 'url("'+FREEmium ['app_root']+'/img/png/system/bullet.png")' );
 		
 		_css ($('#FREEmium article'), 'padding', '0px');
 		_css ($('#FREEmium article'), 'background', 'none');
@@ -91,7 +87,6 @@ function _site_style (){
 			}
 		}
 		_adjust_winmode ();
-		
 	}catch (err){
 		alert ('FREEmium view.js \n\n _site_style Error\n\n'+err);
 	}
@@ -154,7 +149,6 @@ function _adjust_winmode (){
 function _fonts (){
 // Uses CSS at runtime to set the font to a Google
 	try {
-		var fontsize = 15;//px
 		_css ($('body'), 'font-family', 'Lato' );
 		_css ($('body'), 'color', FREEmium ['colours']['text'] );
 		_css ($('pre'), 'font-family', 'Courier New' );
@@ -164,7 +158,7 @@ function _fonts (){
 		_css ($('h2'), 'margin', '0px' );
 		_css ($('h1'), 'margin', '0px' );
 		_css ($('h4'), 'color',  FREEmium ['colours']['htags']);
-		_css ($('h3'), 'color',  FREEmium ['colours']['htags']);
+		//_css ($('h3'), 'color',  FREEmium ['colours']['htags']);
 		_css ($('h2'), 'color',  FREEmium ['colours']['htags']);
 		_css ($('h1'), 'color',  FREEmium ['colours']['htags']);
 	}catch (err){
