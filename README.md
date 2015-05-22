@@ -66,10 +66,11 @@
     ----------------------------------
     
 Welcome to Listingslab's FREEmium WordPress Theme
+It's a responsive, jQuery fuelled theme that does 
+so much more than you'd expect.
 It (the repository) lives here
 https://github.com/listingslab/listingslab-freemium
 made in AptanaStudio3
-It's a responsive, jQuery fuelled theme that does 
-so much more than you'd expect.
+
 Even the FREE version :)
 tara then :)
