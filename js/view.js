@@ -15,6 +15,9 @@ function _view (){
 function _site_style (){
 // Styles the site
 	try {
+		
+		//_css ($("a:not(.list-pages)"), 'color', 'red' );
+		
 		$('.product_meta').hide();
 		_css ($('#_categories'), 'float', 'left' );
 		

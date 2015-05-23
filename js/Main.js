@@ -13,18 +13,18 @@ $(document).ready(function () {
 				$('#FREEmium').show();
 				$('#preloader').hide();
 			}catch (err){
-				alert ('ERROR FREEmium __Main.js\n' + err);	
+				console.log ('ERROR FREEmium __Main.js\n' + err);	
 			}
 		},500);
 	}catch (err){
-		alert ('FREEmium ERROR Document NOT ready \n' + err);	
+		console.log ('FREEmium ERROR Document NOT ready \n' + err);	
 	}
 });
 function _template_func (){
 // Describes what the function does
 	try {
-		alert ('Describes what the function does');
+		console.log ('Describes what the function does');
 	}catch (err){
-		alert ('ERROR FREEmium _template_func Error\n\n'+err);
+		console.log ('ERROR FREEmium _template_func Error\n\n'+err);
 	}
 }

@@ -1,50 +1,88 @@
 <?php
- /* Listingslab FREEmium WordPress Theme	
- * by Chris Dorward @listingslab http://listingslab.com */
-
-add_action('customize_register', 'freemium_customize');
+	/* Listingslab FREEmium WordPress Theme	
+	* by Chris Dorward @listingslab http://listingslab.com
+	*/
+/**
+ * Adds the individual sections, settings, and controls 
+ * to the theme customizer
+ */
 function freemium_customize ($wp_customize) {
-    
+	///// Headings (H tags) Colour
 	$wp_customize->add_setting( 'htags_colour', array(
-        'default'        => '#4d4d4d',
+        'default'       => '#4d4d4d',
     ) );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'freemium_htags_colour', array(
-        'label'   => 'Headings Colour',
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_htags_colour', array(
+        'label'   => 'Headings (H tags) Colour',
         'section' => 'colors',
         'settings'   => 'htags_colour',
     ) ) );
+	///// Page Link Colour
     $wp_customize->add_setting( 'link_colour', array(
         'default'        => '#4d4d4d',
     ) );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'freemium_link_colour', array(
-        'label'   => 'Link Colour',
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_link_colour', array(
+        'label'   => 'Page Link Colour',
         'section' => 'colors',
         'settings'   => 'link_colour',
     ) ) );
+	///// Text Colour
 	$wp_customize->add_setting( 'text_colour', array(
         'default'        => '#000000',
     ) );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'freemium_text_colour', array(
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_text_colour', array(
         'label'   => 'Text Colour',
         'section' => 'colors',
         'settings'   => 'text_colour',
     ) ) );
-	$wp_customize->add_setting( 'sidebar_text_colour', array(
-        'default'        => '#4d4d4d',
+	
+	///// jQuery UI Default
+	$wp_customize->add_setting( 'ui_default', array(
+        'default'        => '#f4f4f4',
     ) );
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'freemium_sidebar_colour', array(
-        'label'   => 'Sidebar Link Colour',
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_ui_default', array(
+        'label'   => 'UI Default Colour',
         'section' => 'colors',
-        'settings'   => 'sidebar_text_colour',
+        'settings'   => 'ui_default',
     ) ) );
-
-	$wp_customize->add_setting( 'border_colour', array(
-        'default'        => '#eaeaea',
+	
+	///// jQuery UI Hover
+	$wp_customize->add_setting( 'ui_hover', array(
+        'default'        => '#e6e5e5',
     ) );
-    $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'freemium_border_colour', array(
-        'label'   => 'Border Colour',
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_ui_hover', array(
+        'label'   => 'UI Hover Colour',
         'section' => 'colors',
-        'settings'   => 'border_colour',
-    ) ) );	
+        'settings'   => 'ui_hover',
+    ) ) );
+	
+	///// jQuery UI Hover
+	$wp_customize->add_setting( 'ui_active', array(
+        'default'        => '#d7d7d7',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_ui_active', array(
+        'label'   => 'UI Active Colour',
+        'section' => 'colors',
+        'settings'   => 'ui_active',
+    ) ) );
+	
+	///// jQuery UI Border
+	$wp_customize->add_setting( 'ui_border', array(
+        'default'        => '#b6b6b6',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_ui_border', array(
+        'label'   => 'UI Border Colour',
+        'section' => 'colors',
+        'settings'   => 'ui_border',
+    ) ) );
+	
+	
 }
+add_action('customize_register', 'freemium_customize');
 ?>

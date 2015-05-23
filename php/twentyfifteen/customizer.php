@@ -15,25 +15,13 @@
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
 function twentyfifteen_customize_register( $wp_customize ) {
+	  
 	$color_scheme = twentyfifteen_get_color_scheme();
 
 	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
-	// Add color scheme setting and control.
-	$wp_customize->add_setting( 'color_scheme', array(
-		'default'           => 'default',
-		'sanitize_callback' => 'twentyfifteen_sanitize_color_scheme',
-		'transport'         => 'postMessage',
-	) );
-
-	$wp_customize->add_control( 'color_scheme', array(
-		'label'    => __( 'Base Color Scheme', 'twentyfifteen' ),
-		'section'  => 'colors',
-		'type'     => 'select',
-		'choices'  => twentyfifteen_get_color_scheme_choices(),
-		'priority' => 1,
-	) );
+	
 
 	// Add custom header and sidebar text color setting and control.
 	$wp_customize->add_setting( 'sidebar_textcolor', array(
@@ -66,6 +54,8 @@ function twentyfifteen_customize_register( $wp_customize ) {
 
 	// Add an additional description to the header image section.
 	$wp_customize->get_section( 'header_image' )->description = __( 'Applied to the header on small screens and the sidebar on wide screens.', 'twentyfifteen' );
+	
+	
 }
 add_action( 'customize_register', 'twentyfifteen_customize_register', 11 );
 

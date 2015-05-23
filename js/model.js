@@ -118,7 +118,7 @@ function _btn (selector, icon, showtext){
 		});
 		_css (new_button, 'text-align', 'left');	
 		_css (new_button, 'margin', '3px');
-		_css (new_button, 'width', '100%');
+		//_css (new_button, 'width', '100%');
 	}catch (err){	
 		alert ('_btn\n\n'+err);
 	}
