@@ -11,7 +11,7 @@
 		FREEmium ['colours']['htags'] = '<?php print $FREEmium ['theme']['htags'];?>';
 		FREEmium ['colours']['links'] = '<?php print $FREEmium ['theme']['links'];?>';
 		FREEmium ['colours']['text'] = '<?php print $FREEmium ['theme']['text'];?>';
-		
+		FREEmium ['colours']['ui_border'] = '<?php print get_theme_mod ('ui_border', '#b6b6b6');;?>';
 		FREEmium ['served_by'] = '<?php print get_server ();?>';
 		setTimeout(function(){
 			try {

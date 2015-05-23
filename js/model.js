@@ -116,9 +116,11 @@ function _btn (selector, icon, showtext){
 		new_button.click (function(){
 			return true;
 		});
-		_css (new_button, 'text-align', 'left');	
-		_css (new_button, 'margin', '3px');
-		//_css (new_button, 'width', '100%');
+		_css (new_button, 'border-bottom', '1px solid ' + FREEmium ['colours']['ui_border']);	
+		_css (new_button, 'margin', '0px');
+		_css (new_button, 'text-align', 'left');
+		_css (new_button, 'width', '95%');
+		console.log ('freemium : made a _btn');
 	}catch (err){	
 		alert ('_btn\n\n'+err);
 	}

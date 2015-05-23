@@ -82,7 +82,56 @@ function freemium_customize ($wp_customize) {
         'settings'   => 'ui_border',
     ) ) );
 	
+	///// UI Button Text Colour
+	$wp_customize->add_setting( 'ui_btn_text', array(
+        'default'        => '#000000',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_ui_btn_text', array(
+        'label'   => 'UI Button Text Colour',
+        'section' => 'colors',
+        'settings'   => 'ui_btn_text',
+    ) ) );
 	
+	///// UI Toolbar Background Colour
+	$wp_customize->add_setting( 'ui_toolbar_bg', array(
+        'default'        => '#000000',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_ui_toolbar_bg', array(
+        'label'   => 'UI Toolbar Background Colour',
+        'section' => 'colors',
+        'settings'   => 'ui_toolbar_bg',
+    ) ) );
+	
+	///// UI Content Background Colour
+	$wp_customize->add_setting( 'ui_content_bg', array(
+        'default'        => '#ffffff',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize, 'freemium_ui_content_bg', array(
+        'label'   => 'UI Content Background Colour',
+        'section' => 'colors',
+        'settings'   => 'ui_content_bg',
+    ) ) );
+	
+	
+	///// UI Icon Colour
+	
+	$wp_customize->add_setting('ui_icon',  array(
+	        'default' => 'white',
+	    )
+	);
+	$wp_customize->add_control('ui_icon',array(
+	        'type' => 'radio',
+	        'label' => 'UI Icon Colour',
+	        'section' => 'colors',
+	        'choices' => array(
+	            'white' => 'White',
+	            'black' => 'Black',
+	        ),
+	    )
+	);
 }
 add_action('customize_register', 'freemium_customize');
 ?>
