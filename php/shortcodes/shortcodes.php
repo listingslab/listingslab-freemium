@@ -5,6 +5,7 @@ include 'FREEmium/account.php';
 include 'FREEmium/blog.php';
 include 'FREEmium/child-sibling.php';
 include 'FREEmium/jgallery.php';
+include 'FREEmium/microsites.php';
 include 'FREEmium/search.php';
 include 'elegant_themes/et_pb_section.php';
 

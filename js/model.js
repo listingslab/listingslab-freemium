@@ -120,7 +120,7 @@ function _btn (selector, icon, showtext){
 		_css (new_button, 'margin', '0px');
 		_css (new_button, 'text-align', 'left');
 		_css (new_button, 'width', '95%');
-		console.log ('freemium : made a _btn');
+		
 	}catch (err){	
 		alert ('_btn\n\n'+err);
 	}
@@ -185,7 +185,7 @@ function _create_sounds (){
 		     	"poppop",
 		     	"toggle"
 		    ],
-		    path: FREEmium ['app_root'] + "mp3_ogg/",                
+		    path: FREEmium ['app_root'] + "sounds/",                
 		    multiPlay: true,               
 		    volume: "1"
 		});

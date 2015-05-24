@@ -3,15 +3,15 @@
 	 * default jQuery UI styles in certain certain situations */
  	$ui = array ();
 	$ui ['jq-ui'] = get_template_directory_uri().'/js/jquery-ui/images/';
- 	$icon_color = get_theme_mod ('ui_icon', 'white');;
+ 	$icon_color = get_theme_mod ('ui_icon', 'black');;
  	$ui ['icon'] = $ui ['jq-ui'];
  	if ($icon_color == 'white'){
  		$ui ['icon'] .= 'ui-icons_ffffff_256x240.png';
+		$ui ['content_text'] = '#ffffff'; //434672
  	}else if ($icon_color == 'black'){
  		$ui ['icon'] .= 'ui-icons_000000_256x240.png';
+		$ui ['content_text'] = '#000000'; //434672
  	}
-	
-	
 	$ui ['pagelinks'] = get_theme_mod ('link_colour', '#000000');
 	$ui ['default'] = get_theme_mod ('ui_default', '#f4f4f4');
 	$ui ['hover'] = get_theme_mod ('ui_hover', '#e6e5e5');
@@ -23,7 +23,7 @@
 	
 	$ui ['toolbar_text'] = '#fff'; //c8d7ff
 	
-	$ui ['content_text'] = '#083443'; //434672
+	
 ?>
 <style>
 	/* Dynamically change jQuery UI colours with inline CSS

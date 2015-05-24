@@ -119,7 +119,7 @@ function freemium_customize ($wp_customize) {
 	///// UI Icon Colour
 	
 	$wp_customize->add_setting('ui_icon',  array(
-	        'default' => 'white',
+	        'default' => 'black',
 	    )
 	);
 	$wp_customize->add_control('ui_icon',array(

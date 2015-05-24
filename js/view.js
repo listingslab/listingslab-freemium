@@ -29,6 +29,8 @@ function _site_style (){
 		
 		$('#_categories').hide();
 		
+		_css ($('#FREEmium .padded'), 'margin', '10px' );
+		
 		_css ($('#FREEmium .accordion'), 'margin', '25px' );
 		
 		_css ($('#FREEmium .icon_listed'), 'max-width', '25%' );
@@ -160,7 +162,8 @@ function _fonts (){
 		_css ($('h3'), 'margin', '0px' );
 		_css ($('h2'), 'margin', '0px' );
 		_css ($('h1'), 'margin', '0px' );
-		
+		_css ($('h1'), 'margin-bottom', '5px' );
+		_css ($('h2'), 'margin-bottom', '5px' );
 		_css ($('h4'), 'font-weight', 'normal' );
 		_css ($('h3'), 'font-weight', 'normal' );
 		_css ($('h2'), 'font-weight', 'normal' );

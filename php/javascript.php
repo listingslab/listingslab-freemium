@@ -11,7 +11,13 @@
 		FREEmium ['colours']['htags'] = '<?php print $FREEmium ['theme']['htags'];?>';
 		FREEmium ['colours']['links'] = '<?php print $FREEmium ['theme']['links'];?>';
 		FREEmium ['colours']['text'] = '<?php print $FREEmium ['theme']['text'];?>';
-		FREEmium ['colours']['ui_border'] = '<?php print get_theme_mod ('ui_border', '#b6b6b6');;?>';
+		FREEmium ['colours']['ui_default'] = '<?php print get_theme_mod ('ui_default', '#f4f4f4');?>';
+		FREEmium ['colours']['ui_hover'] = '<?php print get_theme_mod ('ui_hover', '#e6e5e5');?>';
+		FREEmium ['colours']['ui_active'] = '<?php print get_theme_mod ('ui_active', '#d7d7d7');?>';
+		FREEmium ['colours']['ui_border'] = '<?php print get_theme_mod ('ui_border', '#b6b6b6');?>';
+		FREEmium ['colours']['ui_content_bg'] = '<?php print get_theme_mod ('ui_content_bg', '#ffffff');?>';
+		
+		
 		FREEmium ['served_by'] = '<?php print get_server ();?>';
 		setTimeout(function(){
 			try {
