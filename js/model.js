@@ -10,7 +10,7 @@ function _model (){
 		FREEmium ['first_visit'] = true;
 		//_cookies ();
 		_resize ();
-		_create_sounds ();
+		//_create_sounds ();
 		_hotkeys ();
 		_accordions ();
 	}catch (err){

@@ -1,7 +1,7 @@
 <?php
 	// Listingslab Open Source
 	global $o;
-	$dialog_title = 'FREEmium on '.get_bloginfo('name');
+	$dialog_title = get_bloginfo('name'). ' FREEmium Admin';
 	if ( !is_user_logged_in() ) {$dialog_title = 'Please login to '.get_bloginfo('name');} 
 ?>
 <div id="laptop_menu" title="<?php print $dialog_title; ?>">
@@ -15,19 +15,27 @@
 	?>
 	<div id="laptop_menu_left">
 		<?php edit_post_link('Edit this content'); ?>
+		<h4>Settings</h4>
 		<a class="laptop_menu" href="<?php print $adminlink; ?>admin.php?page=FREEmium">FREEmium Settings</a>
-		<a class="laptop_menu" href="<?php print $adminlink; ?>admin.php?page=wc-settings">WooCommerce</a>
+		<!--<a class="laptop_menu" href="<?php print $adminlink; ?>admin.php?page=wc-settings">WooCommerce</a>-->
 		<a class="laptop_menu" href="<?php print $adminlink; ?>customize.php">Customize</a>
+		
+		<a class="laptop_menu" href="<?php print $adminlink; ?>plugins.php">Plugins</a>
 		<a class="laptop_menu" href="<?php print $adminlink; ?>nav-menus.php">Menus</a>
 		<a class="laptop_menu" href="<?php print $adminlink; ?>widgets.php">Widgets</a>
-		<a class="laptop_menu" href="<?php print $adminlink; ?>post-new.php?post_type=page">New Page</a>
-		<a class="laptop_menu" href="<?php print $adminlink; ?>post-new.php">New Post</a>
-		<a class="laptop_menu" href="<?php print $adminlink; ?>post-new.php?post_type=product">New Product</a>
+		<a class="laptop_menu" href="<?php print $adminlink; ?>themes.php">Change Theme</a>
+		
 	</div>
 	<div id="laptop_menu_right">
 		<!--<a class="laptop_menu" href="http://living-websites-cloud.eu/wp-admin/network/sites.php?mode=excerpt">Network</a>-->
-		<a class="laptop_menu" href="<?php print $adminlink; ?>themes.php">Change Theme</a>
+		
+		<h4>Add Content</h4>
+		<a class="laptop_menu" href="<?php print $adminlink; ?>post-new.php?post_type=page">New Page</a>
+		<a class="laptop_menu" href="<?php print $adminlink; ?>post-new.php">New Post</a>
+		<a class="laptop_menu" href="<?php print $adminlink; ?>post-new.php?post_type=product">New Product</a>
 		<a class="laptop_menu" href="<?php print $adminlink; ?>import.php">Import</a>
+		
+		<h4>More	</h4>
 		<a class="laptop_menu" href="<?php print $adminlink; ?>export.php">Export</a>
 		<?php print '<a href="'.wp_logout_url().'" class="laptop_menu" title="Logout, '.$current_user->user_login.'" id="gui_logout">Logout</a>'; ?>
 		
@@ -37,7 +45,7 @@
 	<div style="clear:both; height: 10px;"></div>
 	<div id="version">
 		<a href="https://github.com/listingslab/listingslab-freemium" title="This theme is FREE and Open Source on GitHub" target="_blank">	
-			<img align="right" src="<?php print get_template_directory_uri(); ?>/img/png/3rdparty/github/github_download_zip.png" />
+			<img height="20" width="20" vspace="5" hspace="5" align="left" src="<?php print get_template_directory_uri(); ?>/img/png/3rdparty/github/github.png" />
 		</a>
 		<small><i>FREEmium WordPress Theme vs <b><?php $t = wp_get_theme(); print $t->get( 'Version' ); ?></b>. 
 		Served by <b><?php print get_server (); ?></b></i></small>
