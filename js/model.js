@@ -185,7 +185,7 @@ function _create_sounds (){
 		     	"poppop",
 		     	"toggle"
 		    ],
-		    path: FREEmium ['app_root'] + "sounds/",                
+		    path: FREEmium ['theme_path'] + "sounds/",                
 		    multiPlay: true,               
 		    volume: "1"
 		});

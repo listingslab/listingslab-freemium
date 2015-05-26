@@ -5,7 +5,7 @@
 	<script type="text/javascript">
 		FREEmium = [];
 		FREEmium ['version'] = 'FREE';
-		FREEmium ['app_root'] = '<?php print get_template_directory_uri();?>/';
+		FREEmium ['theme_path'] = '<?php print get_template_directory_uri();?>/';
 		FREEmium ['cookie_domain'] = '<?php print $_SERVER ['SERVER_NAME'];?>';
 		FREEmium ['colours'] = [];
 		FREEmium ['colours']['htags'] = '<?php print $FREEmium ['theme']['htags'];?>';

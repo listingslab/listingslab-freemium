@@ -77,12 +77,12 @@ function _toggle_related_pages (){
 			//$.ionSound.play ('toggle');
 			$('#related_pages').fadeIn ();
 			FREEmium ['toggles']['related_pages'] = 'on';
-			$('#related_button img').attr('src',FREEmium ['app_root'] + 'img/png/system/less.png');
+			$('#related_button img').attr('src',FREEmium ['theme_path'] + 'img/png/system/less.png');
 		}else{
 			//$.ionSound.play ('toggle');
 			$('#related_pages').fadeOut ();
 			FREEmium ['toggles']['related_pages'] = 'off';
-			$('#related_button img').attr('src',FREEmium ['app_root'] + 'img/png/system/more.png');
+			$('#related_button img').attr('src',FREEmium ['theme_path'] + 'img/png/system/more.png');
 		}
 	}catch (err){
 		alert ('ERROR FREEmium _toggle_related_pages Error\n\n'+err);

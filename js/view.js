@@ -69,7 +69,7 @@ function _site_style (){
 		$('#FREEmium .comments-link').hide();
 		
 		_css ($('#FREEmium li'), 'list-style', 'none' );
-		_css ($('#main li'), 'list-style-image', 'url("'+FREEmium ['app_root']+'/img/png/system/bullet.png")' );
+		_css ($('#main li'), 'list-style-image', 'url("'+FREEmium ['theme_path']+'/img/png/system/bullet.png")' );
 		
 		_css ($('#FREEmium article'), 'padding', '0px');
 		_css ($('#FREEmium article'), 'background', 'none');
