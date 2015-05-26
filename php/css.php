@@ -31,8 +31,6 @@
 	a {color: <?php print $ui ['pagelinks'];?>;}
 	::selection {background: <?php print $ui ['default'];?>;color: #fff;text-shadow: none;}
 	::-moz-selection {background: <?php print $ui ['default'];?>;color: #fff;text-shadow: none;}
-	.ui-state-highlight,.ui-widget-content .ui-state-highlight,.ui-widget-header .ui-state-highlight {background: <?php print $ui ['highlight'];?>;}
-	.ui-state-error,.ui-widget-content .ui-state-error,.ui-widget-header .ui-state-error {background: <?php print $ui ['error'];?>;}
 	.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {background: <?php print $ui ['default'];?>;}
 	.ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus {background: <?php print $ui ['hover'];?>;}
 	.ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active {background: <?php print $ui ['active'];?>;}
