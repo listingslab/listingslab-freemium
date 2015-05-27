@@ -15,7 +15,7 @@ $(document).ready(function () {
 			}catch (err){
 				console.log ('ERROR FREEmium __Main.js\n' + err);	
 			}
-		},500);
+		},1000);
 	}catch (err){
 		console.log ('FREEmium ERROR Document NOT ready \n' + err);	
 	}
