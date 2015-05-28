@@ -1,7 +1,7 @@
 <?php
  /* Listingslab FREEmium WordPress Theme	
  * by Chris Dorward @listingslab http://listingslab.com */
-error_reporting(E_ALL); ini_set('display_errors', '1');
+error_reporting(E_ALL); ini_set('display_errors', '0');
 include 'php/functions/custom_login.php';
 include 'php/functions/customize.php';
 include 'php/functions/get_desc.php';

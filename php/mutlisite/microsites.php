@@ -1,6 +1,6 @@
 	<?php
 	error_reporting(E_ALL ^ E_DEPRECATED);
-	ini_set('display_errors', '1');
+	ini_set('display_errors', '0');
 	header('Content-Type: text/html; charset=Windows-1252');
 	$html = '';
 	$getvars = array ();

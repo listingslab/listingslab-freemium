@@ -1,7 +1,8 @@
 <?php
 	/* Listingslab FREEmium WordPress Theme	
 	by Chris Dorward @listingslab http://listingslab.com */
-	error_reporting(E_ALL);ini_set('display_errors', '1');	
+	error_reporting(E_ALL);
+	ini_set('display_errors', '0');	
 	get_header();
 ?>
 	<div id="primary" class="content-area">
