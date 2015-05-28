@@ -4,11 +4,7 @@
 		<?php get_search_form(); ?>
 	</div>
 	<?php //include 'php/cookies.php'; ?>
-	<div class="wordpress_widgets">
-	<?php if ( is_active_sidebar( 'admin_widgets' ) ) : ?>
-			<?php dynamic_sidebar( 'admin_widgets' ); ?>
-	<?php endif; ?>
-</div>
+	
 	</div>
 </div>
 <?php wp_footer(); ?>

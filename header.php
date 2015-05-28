@@ -21,7 +21,7 @@ $config['icon'] = get_theme_mod ('icon', $default_icon);
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<link rel="shortcut icon" href="<?php print $config['icon']; ?>" type="image/x-icon" />
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	<!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>-->
 	<?php wp_head(); ?>
 	
 	<?php include 'php/css.php'; ?>

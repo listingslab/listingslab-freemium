@@ -49,7 +49,7 @@
 			<script src="<?php print $OSF ['OSF_path']; ?>includes/JavaScript/OSFrontend/model.js"></script>
 			<script src="<?php print $OSF ['OSF_path']; ?>includes/JavaScript/OSFrontend/view.js"></script>
 			<script src="<?php print $OSF ['OSF_path']; ?>includes/JavaScript/OSFrontend/controller.js"></script>
-			<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+			<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'> -->
 			<script type="text/javascript">
 				OSF = [];
 				OSF ['title'] = '<?php print $OSF ['title']; ?>';
