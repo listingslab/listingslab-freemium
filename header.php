@@ -1,11 +1,7 @@
 <?php 
-$config = array ();
-$default_icon = get_template_directory_uri().'/img/png/system/add_logo.png';
-$config['icon'] = get_theme_mod ('icon', $default_icon);
-//print '<pre>';
-//print_r ($link_colour);
-//print '</pre>';
-
+	$config = array ();
+	$default_icon = get_template_directory_uri().'/img/png/system/add_logo.png';
+	$config['icon'] = get_theme_mod ('icon', $default_icon);
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
@@ -21,7 +17,7 @@ $config['icon'] = get_theme_mod ('icon', $default_icon);
 	<![endif]-->
 	<script>(function(){document.documentElement.className='js'})();</script>
 	<link rel="shortcut icon" href="<?php print $config['icon']; ?>" type="image/x-icon" />
-	<!--<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>-->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 	
 	<?php include 'php/css.php'; ?>
@@ -37,7 +33,6 @@ $config['icon'] = get_theme_mod ('icon', $default_icon);
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
 				<?php
-					//'/?clicked=icon'
 					$icon_link = esc_url(home_url());
 					$icon = $config['icon'];
 					if (strpos ($icon,'add_logo.png') !== false) {

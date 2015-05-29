@@ -20,6 +20,9 @@
 	$ui ['btn_text'] = get_theme_mod ('ui_btn_text', '#000000');
 	$ui ['toolbar_bg'] = get_theme_mod ('ui_toolbar_bg', '#7a7a7a');
 	$ui ['content_bg'] = get_theme_mod ('ui_content_bg', '#ffffff');
+	$ui ['sidebar_bg'] = get_theme_mod ('header_background_color', 'white');
+	
+	
 	
 	$ui ['toolbar_text'] = '#fff'; //c8d7ff
 	
@@ -29,6 +32,7 @@
 	/* Dynamically change jQuery UI colours with inline CSS
 	 * Find out how here http://wp.me/P5Q8N9-1eS */
 	a {color: <?php print $ui ['pagelinks'];?>;}
+	.secondary { background-color: <?php print $ui ['sidebar_bg'];?>;}
 	::selection {background: <?php print $ui ['default'];?>;color: #fff;text-shadow: none;}
 	::-moz-selection {background: <?php print $ui ['default'];?>;color: #fff;text-shadow: none;}
 	.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {background: <?php print $ui ['default'];?>;}

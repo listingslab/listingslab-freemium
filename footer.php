@@ -13,8 +13,8 @@
 	<!-- http://preloaders.net -->
 	<?php 		
 		$animations = array(
-			"loader_apple.GIF",
-			"loader_apple.GIF"
+			"loader_android.GIF",
+			"loader_android.GIF"
 		);
 		//"loader_android.GIF",
 		//"loader_apple.GIF",
