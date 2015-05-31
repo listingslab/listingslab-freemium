@@ -32,7 +32,7 @@
 	/* Dynamically change jQuery UI colours with inline CSS
 	 * Find out how here http://wp.me/P5Q8N9-1eS */
 	a {color: <?php print $ui ['pagelinks'];?>;}
-	.secondary { background-color: <?php print $ui ['sidebar_bg'];?>;}
+	.secondary { background-color: <?php print $ui ['sidebar_bg'];?>; margin-right:5px;}
 	::selection {background: <?php print $ui ['default'];?>;color: #fff;text-shadow: none;}
 	::-moz-selection {background: <?php print $ui ['default'];?>;color: #fff;text-shadow: none;}
 	.ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default {background: <?php print $ui ['default'];?>;}
