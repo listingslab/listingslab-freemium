@@ -11,8 +11,8 @@ function setup_jqueryui() {
 		wp_enqueue_script('jquery');
 		wp_register_script('jqueryui', get_template_directory_uri() . '/js/jquery-ui/jquery-ui.js', false);
 		wp_enqueue_script('jqueryui');
-		wp_register_script('ion_sound', get_template_directory_uri() . '/js/ion_sound/js/ion.sound.js', false);
-		wp_enqueue_script('ion_sound');
+		//wp_register_script('ion_sound', get_template_directory_uri() . '/js/ion_sound/js/ion.sound.js', false);
+		//wp_enqueue_script('ion_sound');
 		wp_register_script('hotkeys', get_template_directory_uri() . '/js/jquery.hotkeys/jquery.hotkeys.js', false);
 		wp_enqueue_script('hotkeys');
 		
